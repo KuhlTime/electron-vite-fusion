@@ -4,6 +4,7 @@
     "octref.vetur",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "cschleiden.vscode-github-actions"
+    "cschleiden.vscode-github-actions",
+    "syler.sass-indented"
   ]
 }

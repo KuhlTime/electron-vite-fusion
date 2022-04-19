@@ -4,9 +4,19 @@
   "description": "A boilerplate to quickly get strated with electron, vite and vue3",
   "main": "electron/app.js",
   "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:electron": "cross-env ELECTRON=true vite build",
+    "serve": "vite preview",
+    "electron": "wait-on tcp:3000 && cross-env IS_DEV=true electron .",
+    "electron:dev": "concurrently -n \"⚡️ Vite,⚛ Electron\" -c \"yellow.bold,blue.bold\" \"cross-env BROWSER=none npm run dev\" \"npm run electron\"",
+    "electron:pack": "electron-builder --dir",
+    "electron:build": "electron-builder",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "electron-builder",
-    "clean": "rimraf dist"
+    "dist": "npm run build:electron && npm run electron:build",
+    "clean": "rimraf dist | rimraf node_modules",
+    "postinstall": "electron-builder install-app-deps"
   },
   "repository": {
     "type": "git",
@@ -21,10 +31,22 @@
     "url": "https://github.com/KuhlTime/electron-vue-boilerplate/issues"
   },
   "homepage": "https://github.com/KuhlTime/electron-vue-boilerplate#readme",
+  "dependencies": {
+    "vue": "^3.2.33"
+  },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "concurrently": "^7.1.0",
     "cross-env": "^7.0.3",
     "electron": "^18.0.4",
     "electron-builder": "^22.5.1",
-    "rimraf": "^3.0.2"
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "prettier": "^2.6.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.50.1",
+    "vite": "^2.9.5",
+    "wait-on": "^6.0.1"
   }
 }

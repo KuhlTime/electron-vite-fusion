@@ -1,0 +1,30 @@
+{
+  "name": "electron-vue-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate to quickly get strated with electron, vite and vue3",
+  "main": "electron/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dist": "electron-builder",
+    "clean": "rimraf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KuhlTime/electron-vue-boilerplate.git"
+  },
+  "author": {
+    "name": "André Kuhlmann",
+    "email": "akuhltime@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KuhlTime/electron-vue-boilerplate/issues"
+  },
+  "homepage": "https://github.com/KuhlTime/electron-vue-boilerplate#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^18.0.4",
+    "electron-builder": "^23.0.3",
+    "rimraf": "^3.0.2"
+  }
+}

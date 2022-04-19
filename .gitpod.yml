@@ -1,0 +1,18 @@
+tasks:
+  - init: npm install
+
+# The preview opens up by the vite plugin
+# as it gets installed automatically
+# ports:
+# - port: 4000
+#   onOpen: open-preview
+
+vscode:
+  extensions:
+    - dbaeumer.vscode-eslint
+    - EditorConfig.EditorConfig
+    - esbenp.prettier-vscode
+    - johnsoncodehk.volar
+    - antfu.vite
+    - syler.sass-indented
+    - cschleiden.vscode-github-actions

@@ -1,0 +1,11 @@
+# Based on:
+# - https://github.com/aws/jsii/blob/main/.prettierrc.yaml
+
+---
+arrowParens: avoid
+bracketSpacing: true
+printWidth: 120
+semi: false
+singleQuote: true
+tabWidth: 2
+trailingComma: none

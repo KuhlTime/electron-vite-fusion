@@ -11,10 +11,10 @@
     "electron": "wait-on tcp:3000 && cross-env IS_DEV=true electron .",
     "electron:dev": "concurrently -n \"⚡️ Vite,⚛ Electron\" -c \"yellow.bold,blue.bold\" \"cross-env BROWSER=none npm run dev\" \"npm run electron\"",
     "electron:pack": "electron-builder --dir",
-    "electron:build": "electron-builder",
+    "electron:dist": "electron-builder",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "npm run build:electron && npm run electron:build",
+    "dist": "npm run build:electron && npm run electron:dist",
     "clean": "rimraf dist | rimraf node_modules",
     "postinstall": "electron-builder install-app-deps"
   },

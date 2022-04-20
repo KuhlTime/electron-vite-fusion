@@ -16,8 +16,8 @@ This file provides additonal information to every available NPM action.
 - **`build:electron`**: This sets some additional properties to optimize the build for the electron container.
 - **`electron`**: Intermediate command that gets called by the `electron:dev` command.
 - **`serve`**: Servers the content of the previously compiled *dist* directory. (When developing always use `dev` instead)
-- **`electron:pack`**: Build Electron in an unpacked format, this is usefull to investigate the output of *electron-builder*.
-- **`electron:build`**: This builds the application for production. This is an intermediate call that is performed by the `dist` command.
+- **`electron:pack`**: Build Electron in an unpacked format, this is usefull for investigating and testing the output of *electron-builder*.
+- **`electron:dist`**: This packages the electron application in a distributable format such as a `.dmg`, `.exe` or `.deb`. The configuration of which formats to generate can be checked out inside the `electron-builder.json` file. This is an intermediate call that is performed by the `dist` command.
 - **`clean`**: Restores the default state without any installed packages.
 - **`postinstall`**: Installs additional electron dependencies after `npm install` has finished.
 

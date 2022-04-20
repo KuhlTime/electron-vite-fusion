@@ -6,7 +6,10 @@ productName: Electron Vue Boilerplate
 copyright: Copyright © 2022 ${author}
 
 files:
+  # the directory where vite will build the app to
   - dist/**/*
+
+  # the directory where the application code lives
   - electron/**/*
 
 directories:

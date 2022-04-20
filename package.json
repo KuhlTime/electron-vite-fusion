@@ -1,5 +1,5 @@
 {
-  "name": "electron-vue-boilerplate",
+  "name": "electron-vite-fusion",
   "version": "1.0.0",
   "description": "A boilerplate to quickly get strated with electron, vite and vue3",
   "main": "electron/app.js",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KuhlTime/electron-vue-boilerplate.git"
+    "url": "git+https://github.com/KuhlTime/electron-vite-fusion.git"
   },
   "author": {
     "name": "André Kuhlmann",
@@ -28,9 +28,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/KuhlTime/electron-vue-boilerplate/issues"
+    "url": "https://github.com/KuhlTime/electron-vite-fusion/issues"
   },
-  "homepage": "https://github.com/KuhlTime/electron-vue-boilerplate#readme",
+  "homepage": "https://github.com/KuhlTime/electron-vite-fusion#readme",
   "dependencies": {
     "vue": "^3.2.33"
   },

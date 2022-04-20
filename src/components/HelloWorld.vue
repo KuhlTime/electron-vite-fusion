@@ -9,8 +9,10 @@
   </p>
 
   <p>
-    <a href="https://vitejs.dev/guide/features.html" target="_blank"> Vite Documentation </a>
-    |
+    <a href="https://github.com/KuhlTime/electron-vite-fusion" target="_blank">Boilerplate</a>
+    <span> | </span>
+    <a href="https://vitejs.dev/guide/features.html" target="_blank">Vite Documentation</a>
+    <span> | </span>
     <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Documentation</a>
   </p>
 

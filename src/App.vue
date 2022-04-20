@@ -5,7 +5,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
+  <img alt="Vue logo" src="./assets/logo.png" width="200" />
   <HelloWorld msg="Fuse: Electron + Vite 2 + Vue 3 → 🎉" />
 </template>
 

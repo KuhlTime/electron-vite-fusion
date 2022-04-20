@@ -9,6 +9,7 @@ This file provides additonal information to every available NPM action.
 - **`lint`**: Points out any errors or warnings with the code.
 - **`test`**: Runs testing scripts to validate that the app is working properly.
 - **`dist`**: Builds the complete electron application for production.
+- **`dist:unsigned`**: Builds the application without automatically applying a certificate. [Code Signing - electron-builder Documentation](https://www.electron.build/code-signing)
 
 ### Operational:
 

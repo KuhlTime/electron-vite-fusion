@@ -5,3 +5,9 @@
 <h1 align="center">Electron-Vite-Fusion</h1>
 
 This is a boilerplate to get you quickly up and running with **Electron**, **Vite** and **Vue3**. I am using this boilerplate as a starting point for some of my own application.
+
+### TODO
+
+- [ ] Add Code Signing
+- [ ] Add GitHub Action for Distributing the App
+- [ ] Setup Auto Updates

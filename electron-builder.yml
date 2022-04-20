@@ -10,8 +10,8 @@ files:
   - electron/**/*
 
 directories:
-  buildResources: assets
-  output: dist.electron
+  buildResources: build # 'build' is the default value
+  output: dist-electron
 
 linux:
   target:

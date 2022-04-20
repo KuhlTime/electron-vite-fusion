@@ -19,6 +19,6 @@ This file provides additonal information to every available NPM action.
 - **`electron:pack`**: Build Electron in an unpacked format, this is usefull for investigating and testing the output of *electron-builder*.
 - **`electron:dist`**: This packages the electron application in a distributable format such as a `.dmg`, `.exe` or `.deb`. The configuration of which formats to generate can be checked out inside the `electron-builder.json` file. This is an intermediate call that is performed by the `dist` command.
 - **`clean`**: Restores the default state without any installed packages.
-- **`postinstall`**: Installs additional electron dependencies after `npm install` has finished.
+- **`postinstall`**: Installs additional electron dependencies after `npm install` has finished. This ensures that the native dependencies always matched the electron version.
 
 What is *HMR*? - TL;DR *HMR* boils down to no reloads of the page when the source code changes.

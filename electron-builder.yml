@@ -23,19 +23,6 @@ linux:
         - x64
         - arm64
         - armv7l
-    - target: AppImage
-      arch:
-        - x64
-        - arm64
-        - armv7l
-    - target: rpm
-      arch:
-        - x64
-        - arm64
-        - armv7l
-    - target: snap
-      arch:
-        - x64
 
 win:
   target:

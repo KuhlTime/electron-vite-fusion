@@ -56,3 +56,12 @@ mac:
   artifactName: '${productName}-${version}-${os}-${arch}.${ext}'
   category: public.app-category.utilities
   darkModeSupport: true
+
+  # Wether or not the apple app has to run with an hardened sandbox.
+  # This has to be enabled for the app to be notarized.
+  # https://developer.apple.com/documentation/security/hardened_runtime
+  hardenedRuntime: true
+  gatekeeperAssess: false
+
+  entitlements: 'build/mac/entitlements.plist'
+  entitlementsInherit: 'build/mac/entitlements.plist'

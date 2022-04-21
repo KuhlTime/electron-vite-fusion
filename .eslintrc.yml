@@ -1,13 +1,17 @@
 ---
 env:
   node: true
+parser: '@typescript-eslint/parser'
+plugins:
+  - '@typescript-eslint/eslint-plugin'
 extends:
-  - "eslint:recommended"
-  - "plugin:vue/vue3-recommended"
-  - "plugin:vue/vue3-essential" # This option doesn't impose formatting rules
+  - 'eslint:recommended'
+  - 'plugin:@typescript-eslint/eslint-recommended'
+  - 'plugin:vue/vue3-recommended'
+  - 'plugin:vue/vue3-essential' # This option doesn't impose formatting rules
   # - 'plugin:vue/vue3-strongly-recommended' # This option imposes formatting rules on your code to improve readability
-  - "prettier"
+  - 'prettier'
 rules:
   # override/add rules settings here, such as:
-  "no-unused-vars": "warn"
-  "vue/no-unused-vars": "warn"
+  'no-unused-vars': 'warn'
+  'vue/no-unused-vars': 'warn'

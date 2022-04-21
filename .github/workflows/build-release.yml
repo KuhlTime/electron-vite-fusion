@@ -15,6 +15,7 @@ jobs:
   build:
     name: Build
     runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
@@ -80,6 +81,7 @@ jobs:
     # This should only get run if there is a tag assigned to the commit.
     # The action will not run when one or more of the 'build' jobs has failed.
     if: startsWith(github.ref, 'refs/tags/')
+    timeout-minutes: 10
     steps:
       - name: Download Build Artifacts
         uses: actions/download-artifact@v3

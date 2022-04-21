@@ -13,7 +13,7 @@
     "electron:pack": "electron-builder --dir",
     "electron:dist": "electron-builder",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"Warning: no test specified\"",
     "dist": "npm run build:electron && npm run electron:dist",
     "dist:unsigned": "cross-env CSC_IDENTITY_AUTO_DISCOVERY=false npm run dist",
     "clean": "rimraf dist | rimraf node_modules",

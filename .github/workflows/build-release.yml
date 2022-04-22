@@ -89,18 +89,17 @@ jobs:
       - name: Debug List Artifacts
         run: ls
 
-      - name: List files
-        id: list
-        run: echo ::set-output name=files::$(ls)
-
-      - name: Debug Output
-        run: echo ${{ steps.list.outputs.files }}
-
       - name: Release
-        uses: kuhltime/action-gh-release@v1
+        uses: softprops/action-gh-release@v1
         with:
           name: Release ${{ github.ref }}
           draft: true
           generate_release_notes: true
           prerelease: false
-          files: ${{ steps.list.outputs.files }}
+          files: |
+            *.dmg
+            *.snap
+            *.AppImage
+            *.deb
+            *.rpm
+            *.exe

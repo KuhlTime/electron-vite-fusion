@@ -87,17 +87,17 @@ jobs:
         uses: actions/download-artifact@v3
 
       - name: Debug List Artifacts
-        run: ls | cat
+        run: ls
 
       - name: List files
         id: list
-        run: echo ::set-output name=files::$(ls | cat)
+        run: echo ::set-output name=files::$(ls)
 
       - name: Debug Output
         run: echo ${{ steps.list.outputs.files }}
 
       - name: Release
-        uses: softprops/action-gh-release@v1
+        uses: kuhltime/action-gh-release@v1
         with:
           name: Release ${{ github.ref }}
           draft: true

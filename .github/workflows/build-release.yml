@@ -80,15 +80,21 @@ jobs:
     needs: build
     # This should only get run if there is a tag assigned to the commit.
     # The action will not run when one or more of the 'build' jobs has failed.
-    # if: startsWith(github.ref, 'refs/tags/')
+    if: startsWith(github.ref, 'refs/tags/')
     timeout-minutes: 10
     steps:
       - name: Download Build Artifacts
         uses: actions/download-artifact@v3
 
+      - name: Debug List Artifacts
+        run: ls | cat
+
       - name: List files
         id: list
         run: echo ::set-output name=files::$(ls | cat)
+
+      - name: Debug Output
+        run: echo ${{ steps.list.outputs.files }}
 
       - name: Release
         uses: softprops/action-gh-release@v1

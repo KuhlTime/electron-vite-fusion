@@ -4,6 +4,7 @@
 appId: com.electron.electron-vite-fusion
 productName: Electron Vite Fusion
 copyright: Copyright © 2022 ${author}
+artifactName: '${name}_${version}_${os}_${arch}.${ext}'
 
 files:
   # the directory where vite will build the app to
@@ -40,7 +41,6 @@ mac:
     arch:
       - x64
       - arm64
-  artifactName: '${productName}-${version}-${os}-${arch}.${ext}'
   category: public.app-category.utilities
   darkModeSupport: true
 

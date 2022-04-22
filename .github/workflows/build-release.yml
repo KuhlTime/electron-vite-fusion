@@ -97,9 +97,9 @@ jobs:
           generate_release_notes: true
           prerelease: false
           files: |
-            *.dmg
-            *.snap
-            *.AppImage
-            *.deb
-            *.rpm
-            *.exe
+            */*.dmg
+            */*.snap
+            */*.AppImage
+            */*.deb
+            */*.rpm
+            */*.exe

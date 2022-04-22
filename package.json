@@ -1,6 +1,6 @@
 {
   "name": "electron-vite-fusion",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A boilerplate to quickly get strated with electron, vite and vue3",
   "main": "electron/app.js",
   "scripts": {

@@ -8,6 +8,6 @@ This is a boilerplate to get you quickly up and running with **Electron**, **Vit
 
 ### TODO
 
+- [X] Add GitHub Action for Distributing the App
 - [ ] Add Code Signing
-- [ ] Add GitHub Action for Distributing the App
 - [ ] Setup Auto Updates
